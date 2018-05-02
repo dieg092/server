@@ -22,8 +22,8 @@
     "redux-form": "^7.3.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar ./src/ -o public/css",
-    "watch-css": "npm run build-css && node-sass-chokidar ./src/ -o public/css  --watch --recursive",
+    "build-css": "node-sass-chokidar ./src/styles -o ./public/css",
+    "watch-css": "npm run build-css && node-sass-chokidar ./src/styles -o ./public/css --watch --recursive",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",

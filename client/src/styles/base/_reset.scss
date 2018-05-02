@@ -1,0 +1,11 @@
+@import "../../../node_modules/materialize-css/sass/materialize.scss";
+
+
+body {
+  background-color: $grey_ligth;
+}
+
+label {
+  color: red !important;
+  font-size: 20rem;
+}

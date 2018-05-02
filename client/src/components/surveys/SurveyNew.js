@@ -25,8 +25,12 @@ class SurveyNew extends Component {
 
   render() {
     return (
-      <div>
-        {this.renderContent()}
+      <div className="container">
+        <div className="row">
+          <div className="col s6 offset-s3 card darken-1">
+            {this.renderContent()}
+          </div>
+        </div>
       </div>
     );
   }

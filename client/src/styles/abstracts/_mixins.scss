@@ -1,0 +1,16 @@
+@mixin fontSize($fontSize, $lineHeight: $fontSize) {
+    font-size: $fontSize !important;
+
+    @if $lineHeight == auto {
+        line-height: $sizeLineHeightBase !important;
+    } @else {
+        line-height: stripUnit($lineHeight/$fontSize) !important;
+    }
+}
+
+@function stripUnit($number) {
+    @if type-of($number) == 'number' and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
