@@ -3,6 +3,12 @@ body {
 }
 
 label {
-  color: red !important;
-  font-size: 50px !important;
+  color: $black !important;
+  @include fontSize(1.5rem, 1.6rem);
+}
+
+.padding-close {
+  padding-top: 8px;
+  padding-right: 8px;
+  cursor: pointer;
 }

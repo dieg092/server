@@ -28,7 +28,7 @@ class SurveyNew extends Component {
       <div className="marginTopTop">
         <div className="container">
           <div className="row">
-            <div className="col s6 offset-s3 card darken-1">
+            <div className="col m8 offset-m2 s12 card darken-1">
               {this.renderContent()}
             </div>
           </div>

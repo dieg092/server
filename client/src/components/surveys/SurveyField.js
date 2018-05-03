@@ -7,8 +7,8 @@ export default ({ input, label, meta: { error, touched } }) => {
   return (
     <div>
       <label>{label}</label>
-      <input {...input} style={{ marginBottom: '10px' }}/>
-      <div className="red-text" style={{ marginBottom: '20px' }}>
+      <input {...input} />
+      <div className="red-text">
         {touched && error}
       </div>
     </div>
