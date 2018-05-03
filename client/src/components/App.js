@@ -11,7 +11,7 @@ import SurveyNew from './surveys/SurveyNew';
 class App extends Component {
   componentDidMount() {
     this.props.fetchUser();
-    $(document).ready(function(){
+    $(document).ready(() => {
       $('.modal').modal();
     });
   }

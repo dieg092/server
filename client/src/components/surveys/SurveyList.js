@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchSurveys } from '../../actions';
+import ModalDeleteSurvey from './ModalDeleteSurvey';
 
 class SurveyList extends Component {
   componentDidMount() {
@@ -11,7 +12,7 @@ class SurveyList extends Component {
     return this.props.surveys.reverse().map(survey => {
       return (
           <div className="card darken-1 hoverable" key={survey._id}>
-            <a className="right padding-close black-text" data-target="modal1" href="#modal1"><i className="material-icons">close</i></a>
+            <a className="right padding-close black-text" href="#modal1"><i className="material-icons">close</i></a>
             <div className="card-content">
               <span className="card-title">{survey.title}</span>
               <p>
@@ -25,6 +26,7 @@ class SurveyList extends Component {
               <a>Yes: {survey.yes}</a>
               <a>No: {survey.no}</a>
             </div>
+            <ModalDeleteSurvey />
           </div>
       );
     })
